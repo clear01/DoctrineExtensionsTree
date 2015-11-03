@@ -17,6 +17,7 @@ class Category
 	 * @ORM\Column(type="integer")
 	 * @ORM\Id
 	 * @ORM\GeneratedValue
+	 * @var int
 	 */
 	public $id;
 
