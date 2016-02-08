@@ -7,7 +7,6 @@
 
 namespace Zenify\DoctrineExtensionsTree\DI;
 
-use Doctrine\Common\Annotations\Reader;
 use Gedmo\Tree\TreeListener;
 use Kdyby\Events\DI\EventsExtension;
 use Nette\DI\CompilerExtension;
@@ -22,7 +21,7 @@ class TreeExtension extends CompilerExtension
 
 		$builder->addDefinition($this->prefix('listener'))
 			->setClass(TreeListener::class)
-			->addSetup('setAnnotationReader', ['@' . Reader::class])
+			->addSetup('setAnnotationReader', ['@Doctrine\Common\Annotations\Reader'])
 			->addTag(EventsExtension::TAG_SUBSCRIBER);
 	}
 
