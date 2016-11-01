@@ -1,25 +1,6 @@
-filter:
-    excluded_paths: [tests/*]
-
-before_commands:
-    - "composer install --prefer-source"
+tools:
+    external_code_coverage: true
 
 checks:
-	php:
-		code_rating: true
-
-tools:
-    external_code_coverage:
-        timeout: 600
-        runs: 3
-    php_analyzer: true
-    php_code_coverage: false
-    php_cpd:
-        enabled: true
-        excluded_dirs: [vendor, tests]
-    php_mess_detector:
-        enabled: true
-        config:
-            ruleset: vendor/zenify/coding-standard/src/ZenifyCodingStandard/mess-detector-ruleset.xml
-        filter:
-            paths: [src, tests]
+    php:
+        code_rating: true

@@ -1,19 +1,20 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Zenify\DoctrineExtensions\Tests\Tree;
 
 use Doctrine\ORM\EntityManager;
 use Gedmo\Tree\Entity\Repository\MaterializedPathRepository;
 use Gedmo\Tree\TreeListener;
-use Nette;
 use Nette\DI\Container;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Zenify\DoctrineExtensionsTree\Tests\ContainerFactory;
 use Zenify\DoctrineExtensionsTree\Tests\DatabaseLoader;
 use Zenify\DoctrineExtensionsTree\Tests\Project\Entities\Category;
 
 
-class TreeTest extends PHPUnit_Framework_TestCase
+final class TreeTest extends TestCase
 {
 
 	/**

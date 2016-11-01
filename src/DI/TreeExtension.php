@@ -1,6 +1,8 @@
 <?php
 
-/**
+declare(strict_types=1);
+
+/*
  * This file is part of Zenify
  * Copyright (c) 2012 Tomas Votruba (http://tomasvotruba.cz)
  */
@@ -11,7 +13,7 @@ use Kdyby\Events\DI\EventsExtension;
 use Nette\DI\CompilerExtension;
 
 
-class TreeExtension extends CompilerExtension
+final class TreeExtension extends CompilerExtension
 {
 
 	public function loadConfiguration()

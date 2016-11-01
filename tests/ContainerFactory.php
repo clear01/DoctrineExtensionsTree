@@ -1,20 +1,19 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Zenify\DoctrineExtensionsTree\Tests;
 
-use Nette;
+use Nette\Configurator;
 use Nette\DI\Container;
 
 
-class ContainerFactory
+final class ContainerFactory
 {
 
-	/**
-	 * @return Container
-	 */
-	public function create()
+	public function create() : Container
 	{
-		$configurator = new Nette\Configurator;
+		$configurator = new Configurator;
 		$configurator->setTempDirectory(TEMP_DIR);
 		$configurator->addConfig(__DIR__ . '/config/default.neon');
 		return $configurator->createContainer();

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Zenify\DoctrineExtensionsTree\Tests;
 
 use Doctrine\DBAL\Connection;
@@ -7,7 +9,7 @@ use Doctrine\ORM\EntityManager;
 use Zenify\DoctrineExtensionsTree\Tests\Project\Entities\Category;
 
 
-class DatabaseLoader
+final class DatabaseLoader
 {
 
 	/**

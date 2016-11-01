@@ -12,12 +12,13 @@ Implementation of [Tree from DoctrineExtensions](https://github.com/Atlantic18/D
 ## Install
 
 ```sh
-$ composer require zenify/doctrine-extensions-tree
+composer require zenify/doctrine-extensions-tree
 ```
 
-Register extension in your `config.neon`:
+Register extension:
 
 ```yaml
+# app/config/config.neon
 extensions:
 	- Zenify\DoctrineExtensionsTree\DI\TreeExtension
 ```
