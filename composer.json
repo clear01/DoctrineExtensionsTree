@@ -1,5 +1,5 @@
 {
-    "name": "zenify/doctrine-extensions-tree",
+    "name": "clear01/doctrine-extensions-tree",
     "description": "Implementation of Tree from DoctrineExtensions to Nette.",
     "license": "MIT",
     "authors": [
